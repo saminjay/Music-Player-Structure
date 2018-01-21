@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="drawer_open">Open Nav Drawer</string>
+    <string name="drawer_close">Close Nav Drawer</string>
+
+
+</resources>

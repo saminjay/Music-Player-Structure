@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_18dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/recents"
+            android:icon="@drawable/ic_restore_black_18dp"
+            android:title="Recently Played" />
+        <item
+            android:id="@+id/newly_added"
+            android:icon="@drawable/ic_new_releases_black_18dp"
+            android:title="Newly Added" />
+        <item
+            android:id="@+id/top_songs"
+            android:icon="@drawable/ic_star_rate_black_18dp"
+            android:title="Top Songs"/>
+    </group>
+
+    <item
+        android:title="Sub Items">
+        <menu>
+            <item
+                android:title="Settings"/>
+            <item
+                android:title="About"/>
+        </menu>
+    </item>
+
+
+
+</menu>
