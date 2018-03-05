@@ -9,11 +9,10 @@ public class Songs {
     private String artistName;
     private String albumName;
 
-    public Songs(String song, String artist, String album)
-    {
-        songName=song;
-        albumName=album;
-        artistName=artist;
+    public Songs(String song, String artist, String album) {
+        songName = song;
+        albumName = album;
+        artistName = artist;
     }
 
     public String getSongName() {

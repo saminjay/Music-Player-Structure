@@ -26,9 +26,8 @@ public class SongsAdapter extends ArrayAdapter<Songs> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         View listView = convertView;
-        if(listView == null)
-        {
-            listView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false);
+        if (listView == null) {
+            listView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
         final Songs songs = getItem(position);

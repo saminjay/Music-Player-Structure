@@ -18,13 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RecentlyPlayed"
-            android:label="Recently Played"/>
-        <activity android:name=".NewlyAdded"
-            android:label="Newly Added"/>
+        <activity
+            android:name=".RecentlyPlayed"
+            android:label="Recently Played" />
+        <activity
+            android:name=".NewlyAdded"
+            android:label="Newly Added" />
         <activity
             android:name=".TopSongs"
-            android:label="Top Songs"/>
+            android:label="Top Songs" />
     </application>
 
 </manifest>

@@ -15,6 +15,7 @@
         <item name="tabBackground">@color/colorPrimary</item>
 
     </style>
+
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">#A8A19E</item>
     </style>

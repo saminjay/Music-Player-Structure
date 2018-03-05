@@ -17,19 +17,15 @@
         <item
             android:id="@+id/top_songs"
             android:icon="@drawable/ic_star_rate_black_18dp"
-            android:title="Top Songs"/>
+            android:title="Top Songs" />
     </group>
 
-    <item
-        android:title="Sub Items">
+    <item android:title="Sub Items">
         <menu>
-            <item
-                android:title="Settings"/>
-            <item
-                android:title="About"/>
+            <item android:title="Settings" />
+            <item android:title="About" />
         </menu>
     </item>
-
 
 
 </menu>

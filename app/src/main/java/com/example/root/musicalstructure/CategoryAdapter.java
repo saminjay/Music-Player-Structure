@@ -5,15 +5,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-/**
- * Created by root on 29/12/17.
- */
 
 public class CategoryAdapter extends FragmentPagerAdapter {
 
     private Context mContext;
 
-    public CategoryAdapter(Context context, FragmentManager fragmentManager){
+    CategoryAdapter(Context context, FragmentManager fragmentManager) {
         super(fragmentManager);
         mContext = context;
     }

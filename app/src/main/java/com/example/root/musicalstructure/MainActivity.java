@@ -1,6 +1,5 @@
 package com.example.root.musicalstructure;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -21,7 +20,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
     private ActionBarDrawerToggle drawerToggle;
 
     @Override
@@ -33,10 +31,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         drawerLayout = findViewById(R.id.container);
 
-        navigationView = findViewById(R.id.drawer);
+        NavigationView navigationView = findViewById(R.id.drawer);
         navigationView.setNavigationItemSelectedListener(this);
 
-        drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.drawer_open, R.string.drawer_close){
+        drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.drawer_open, R.string.drawer_close) {
 
             /** Called when a drawer has settled in a completely closed state. */
             public void onDrawerClosed(View view) {
