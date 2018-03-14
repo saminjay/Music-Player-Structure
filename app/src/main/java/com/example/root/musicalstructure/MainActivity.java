@@ -9,6 +9,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -50,18 +51,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         };
 
         // Set the drawer toggle as the DrawerListener
-        drawerLayout.setDrawerListener(drawerToggle);
+        drawerLayout.addDrawerListener(drawerToggle);
 
-
-        getSupportActionBar().setElevation(0);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_dehaze_white_24dp);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
-
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            getSupportActionBar().setElevation(0);
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_dehaze_white_24dp);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeButtonEnabled(true);
+        }
 
         ViewPager viewPager = findViewById(R.id.view_pager);
 
-        CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
+        CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager());
 
         viewPager.setAdapter(adapter);
 
@@ -139,10 +141,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if (drawerToggle.onOptionsItemSelected(item)) {
-            return true;
-        }
+        return drawerToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
 
-        return super.onOptionsItemSelected(item);
     }
 }

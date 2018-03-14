@@ -1,6 +1,5 @@
 package com.example.root.musicalstructure;
 
-import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -8,11 +7,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class CategoryAdapter extends FragmentPagerAdapter {
 
-    private Context mContext;
-
-    CategoryAdapter(Context context, FragmentManager fragmentManager) {
+    CategoryAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);
-        mContext = context;
     }
 
     @Override
